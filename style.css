@@ -1,1 +1,581 @@
+/* ------------------------------
+   BASIC PAGE SETTINGS
+------------------------------ */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #12162b;
+    color: white;
+    line-height: 1.7;
+}
+
+
+/* ------------------------------
+   NAVIGATION BAR
+------------------------------ */
+
+.navbar {
+    background-color: #12162b;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 4px solid #7d55ff;
+}
+
+.logo {
+    font-family: "Press Start 2P", cursive;
+    color: #ad8cff;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: "Press Start 2P", cursive;
+    font-size: 9px;
+
+    transition: 0.2s;
+}
+
+.nav-links a i {
+    margin-right: 5px;
+}
+
+.nav-links a:hover {
+    color: #ad8cff;
+}
+
+
+/* ------------------------------
+   HERO / HOME
+------------------------------ */
+
+.hero {
+    min-height: 92vh;
+
+    background-image:
+        linear-gradient(
+            rgba(12, 15, 40, 0.35),
+            rgba(12, 15, 40, 0.65)
+        ),
+        url("background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+
+/* ------------------------------
+   PROFILE IMAGE
+------------------------------ */
+
+.profile-frame {
+    width: 230px;
+    height: 230px;
+
+    margin: 0 auto 35px;
+
+    background-color: #8c63ff;
+
+    padding: 8px;
+
+    /*
+       This creates slightly "pixel-like"
+       stepped corners.
+    */
+    clip-path: polygon(
+        10% 0,
+        90% 0,
+        90% 4%,
+        96% 4%,
+        96% 10%,
+        100% 10%,
+        100% 90%,
+        96% 90%,
+        96% 96%,
+        90% 96%,
+        90% 100%,
+        10% 100%,
+        10% 96%,
+        4% 96%,
+        4% 90%,
+        0 90%,
+        0 10%,
+        4% 10%,
+        4% 4%,
+        10% 4%
+    );
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    clip-path: polygon(
+        10% 0,
+        90% 0,
+        90% 4%,
+        96% 4%,
+        96% 10%,
+        100% 10%,
+        100% 90%,
+        96% 90%,
+        96% 96%,
+        90% 96%,
+        90% 100%,
+        10% 100%,
+        10% 96%,
+        4% 96%,
+        4% 90%,
+        0 90%,
+        0 10%,
+        4% 10%,
+        4% 4%,
+        10% 4%
+    );
+}
+
+
+/* ------------------------------
+   HERO TEXT
+------------------------------ */
+
+.hero h1 {
+    font-family: "Press Start 2P", cursive;
+
+    font-size: 34px;
+    line-height: 1.5;
+
+    color: white;
+
+    text-shadow:
+        4px 4px 0 #5636bf,
+        8px 8px 0 #26295c;
+
+    margin-bottom: 25px;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #e6ddff;
+}
+
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+
+.pixel-button,
+.project-button {
+    display: inline-block;
+
+    background-color: #7955e8;
+    color: white;
+
+    padding: 15px 22px;
+
+    text-decoration: none;
+
+    font-family: "Press Start 2P", cursive;
+    font-size: 9px;
+
+    border: 3px solid white;
+
+    box-shadow: 6px 6px 0 #292d66;
+
+    transition: 0.2s;
+}
+
+.pixel-button:hover,
+.project-button:hover {
+    background-color: #a178ff;
+
+    transform: translate(3px, 3px);
+
+    box-shadow: 3px 3px 0 #292d66;
+}
+
+
+/* ------------------------------
+   GENERAL SECTIONS
+------------------------------ */
+
+.content-section {
+    padding: 90px 10%;
+
+    text-align: center;
+
+    background-color: #151a35;
+
+    scroll-margin-top: 80px;
+}
+
+.alternate-section {
+    background-color: #20264b;
+}
+
+.content-section h2 {
+    font-family: "Press Start 2P", cursive;
+
+    color: #ad8cff;
+
+    font-size: 21px;
+
+    margin-bottom: 25px;
+}
+
+.content-section h2 i {
+    margin-right: 10px;
+}
+
+.section-description {
+    margin-bottom: 40px;
+
+    color: #d2d4e8;
+}
+
+
+/* ------------------------------
+   ABOUT
+------------------------------ */
+
+.about-card {
+    max-width: 850px;
+
+    margin: auto;
+
+    background-color: #20264b;
+
+    padding: 40px;
+
+    text-align: left;
+
+    border: 3px solid #7557dc;
+
+    box-shadow: 8px 8px 0 #0b0e20;
+}
+
+.about-card p {
+    margin-bottom: 18px;
+}
+
+.about-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ------------------------------
+   SKILLS
+------------------------------ */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.skill-card {
+    width: 160px;
+
+    background-color: #151a35;
+
+    padding: 30px 15px;
+
+    border: 3px solid #6651bd;
+
+    box-shadow: 6px 6px 0 #11142c;
+
+    transition: 0.2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #b392ff;
+}
+
+.skill-card i {
+    display: block;
+
+    font-size: 42px;
+
+    margin-bottom: 18px;
+
+    color: #ad8cff;
+}
+
+.skill-card span {
+    font-family: "Press Start 2P", cursive;
+
+    font-size: 9px;
+}
+
+
+/* ------------------------------
+   PROJECTS
+------------------------------ */
+
+.projects-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.project-card {
+    width: 320px;
+
+    background-color: #20264b;
+
+    border: 3px solid #7158d6;
+
+    box-shadow: 8px 8px 0 #0a0d1e;
+
+    padding: 30px;
+
+    text-align: left;
+
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-icon {
+    font-size: 35px;
+
+    color: #ad8cff;
+
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-family: "Press Start 2P", cursive;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    color: #b99cff;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.recursion-joke {
+    background-color: #151a35;
+
+    padding: 15px;
+
+    border-left: 4px solid #a379ff;
+
+    font-style: italic;
+}
+
+.project-button {
+    margin-top: 5px;
+}
+
+.future-project {
+    opacity: 0.7;
+}
+
+.coming-soon {
+    font-family: "Press Start 2P", cursive;
+
+    font-size: 8px;
+
+    color: #ad8cff;
+}
+
+
+/* ------------------------------
+   CONTACT
+------------------------------ */
+
+.contact-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.contact-card {
+    width: 330px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #151a35;
+
+    border: 3px solid #7258d8;
+
+    padding: 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: left;
+
+    box-shadow: 6px 6px 0 #101329;
+
+    transition: 0.2s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #b392ff;
+}
+
+.contact-card i {
+    font-size: 36px;
+
+    color: #ad8cff;
+}
+
+.contact-card span {
+    font-family: "Press Start 2P", cursive;
+
+    font-size: 9px;
+}
+
+.contact-card p {
+    margin-top: 6px;
+
+    font-size: 14px;
+
+    color: #d8d8e8;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background-color: #0c0f22;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-top: 4px solid #7557dc;
+}
+
+footer i {
+    color: #ad8cff;
+}
+
+.footer-small {
+    margin-top: 8px;
+
+    color: #9196b5;
+
+    font-size: 13px;
+}
+
+
+/* ------------------------------
+   MOBILE DESIGN
+------------------------------ */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .nav-links {
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .profile-frame {
+        width: 190px;
+        height: 190px;
+    }
+
+    .tagline {
+        font-size: 15px;
+    }
+
+    .content-section {
+        padding: 70px 6%;
+    }
+
+    .about-card {
+        padding: 25px;
+    }
+}
