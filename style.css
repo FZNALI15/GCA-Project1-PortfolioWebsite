@@ -203,7 +203,6 @@ body {
    BUTTONS
 ------------------------------ */
 
-.pixel-button,
 .project-button {
     display: inline-block;
 
@@ -224,7 +223,6 @@ body {
     transition: 0.2s;
 }
 
-.pixel-button:hover,
 .project-button:hover {
     background-color: #a178ff;
 
