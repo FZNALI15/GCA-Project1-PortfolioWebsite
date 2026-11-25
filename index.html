@@ -1,317 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Faizan Ali Wagpurawala | Portfolio</title>
-
-    <!-- Pixel Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- FontAwesome Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
-
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">FAIZAN.dev</div>
-
-        <div class="nav-links">
-            <a href="#home">
-                <i class="fa-solid fa-house"></i>
-                Home
-            </a>
-
-            <a href="#about">
-                <i class="fa-solid fa-user"></i>
-                About
-            </a>
-
-            <a href="#skills">
-                <i class="fa-solid fa-code"></i>
-                Skills
-            </a>
-
-            <a href="#projects">
-                <i class="fa-solid fa-folder-open"></i>
-                Projects
-            </a>
-
-            <a href="#contact">
-                <i class="fa-solid fa-envelope"></i>
-                Contact
-            </a>
+    <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="#home">FAIZAN.dev</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+        <div class="nav-links" id="nav-links">
+            <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+            <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+            <a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
         </div>
     </nav>
-
-
-    <!-- Home Section -->
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <div class="profile-frame">
-                <img
-                    src="profile.png"
-                    alt="Profile image of Faizan Ali Wagpurawala"
-                    class="profile-image"
-                >
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-frame"><img src="profile.png" alt="Profile image of Faizan Ali Wagpurawala" class="profile-image"></div>
+                <h1>FAIZAN ALI<br>WAGPURAWALA</h1>
+                <p class="tagline">CS UnderGrad @ ASU | Trying to do better!</p>
             </div>
-
-            <h1>FAIZAN ALI<br>WAGPURAWALA</h1>
-
-            <p class="tagline">
-                CS UnderGrad @ ASU | Trying to do better!
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about" class="content-section">
-
-        <h2>
-            <i class="fa-solid fa-user"></i>
-            ABOUT ME
-        </h2>
-
-        <div class="about-card">
-
-            <p>
-                I'm Faizan Ali Wagpurawala, a Computer Science undergraduate
-                at Arizona State University with an interest in software
-                development, problem solving, and exploring how technology
-                can be used to build useful and creative projects.
-            </p>
-
-            <p>
-                I've worked with languages such as Python, Java, C/C++, and SQL,
-                and I'm also interested in using AI tools effectively throughout
-                the development process.
-            </p>
-
-            <p>
-                I'm constantly trying to improve my technical skills, gain more
-                real-world experience, and learn by actually building things.
-                This portfolio is where I'll document some of the projects I
-                create along the way.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Skills Section -->
-    <section id="skills" class="content-section alternate-section">
-
-        <h2>
-            <i class="fa-solid fa-laptop-code"></i>
-            SKILLS
-        </h2>
-
-        <p class="section-description">
-            Some of the technologies and skills I've worked with:
-        </p>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <i class="fa-brands fa-python"></i>
-                <span>Python</span>
+        </section>
+        <section id="about" class="content-section">
+            <h2><i class="fa-solid fa-user"></i> ABOUT ME</h2>
+            <div class="about-card reveal">
+                <p>I'm Faizan Ali Wagpurawala, a Computer Science undergraduate at Arizona State University with an interest in software development, computer systems, artificial intelligence, and human-technology interaction. I enjoy exploring how technology works under the hood and how it can be used to solve real-world problems.</p>
+                <p>I've worked with programming languages such as Python, Java, C/C++, JavaScript, and SQL. Through my academic coursework and the Global Career Accelerator, I've gained hands-on experience building responsive websites, interactive applications, games, API integrations, and AI-powered chatbots.</p>
+                <p>I'm naturally curious about emerging technologies and enjoy learning by experimenting and building things. Outside of technology, I enjoy photography, movies, billiards, cooking, and traveling.</p>
+                <p>I'm continuously working to improve my technical skills, gain practical experience, and grow as a developer. This portfolio is a collection of what I've built, what I've learned, and how I'm progressing along the way.</p>
             </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-database"></i>
-                <span>SQL</span>
+        </section>
+        <section id="skills" class="content-section alternate-section">
+            <h2><i class="fa-solid fa-laptop-code"></i> SKILLS</h2>
+            <p class="section-description">Some of the technologies and skills I've worked with:</p>
+            <div class="skills-container">
+                <div class="skill-card reveal"><i class="fa-brands fa-python" aria-hidden="true"></i><span>Python</span></div>
+                <div class="skill-card reveal"><i class="fa-brands fa-java" aria-hidden="true"></i><span>Java</span></div>
+                <div class="skill-card reveal"><i class="fa-solid fa-code" aria-hidden="true"></i><span>C / C++</span></div>
+                <div class="skill-card reveal"><i class="fa-solid fa-database" aria-hidden="true"></i><span>SQL</span></div>
+                <div class="skill-card reveal"><i class="fa-brands fa-js" aria-hidden="true"></i><span>JavaScript</span></div>
+                <div class="skill-card reveal"><i class="fa-brands fa-html5" aria-hidden="true"></i><span>HTML5</span></div>
+                <div class="skill-card reveal"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i><span>CSS3</span></div>
+                <div class="skill-card reveal"><i class="fa-brands fa-bootstrap" aria-hidden="true"></i><span>Bootstrap</span></div>
+                <div class="skill-card reveal"><i class="fa-brands fa-git-alt" aria-hidden="true"></i><span>Git</span></div>
+                <div class="skill-card reveal"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></div>
+                <div class="skill-card reveal"><i class="fa-solid fa-network-wired" aria-hidden="true"></i><span>REST APIs</span></div>
+                <div class="skill-card reveal"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>AI Prompting</span></div>
+                <div class="skill-card reveal"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>AI Integration</span></div>
+                <div class="skill-card reveal"><i class="fa-solid fa-chart-line" aria-hidden="true"></i><span>MATLAB</span></div>
+                <div class="skill-card reveal"><i class="fa-brands fa-linux" aria-hidden="true"></i><span>Linux</span></div>
             </div>
-
-            <div class="skill-card">
-                <i class="fa-brands fa-java"></i>
-                <span>Java</span>
+        </section>
+        <section id="projects" class="content-section">
+            <h2><i class="fa-solid fa-folder-open"></i> PROJECTS</h2>
+            <p class="section-description">A collection of projects I've built throughout my development journey.</p>
+            <div class="project-filters" role="group" aria-label="Filter projects">
+                <button type="button" data-filter="All" aria-pressed="true">All</button>
+                <button type="button" data-filter="Web" aria-pressed="false">Web Development</button>
+                <button type="button" data-filter="Games" aria-pressed="false">Games</button>
+                <button type="button" data-filter="AI" aria-pressed="false">AI</button>
+                <button type="button" data-filter="APIs" aria-pressed="false">APIs</button>
             </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-code"></i>
-                <span>C / C++</span>
+            <p id="project-count" class="project-count" aria-live="polite"></p>
+            <div class="projects-container" id="project-list"></div>
+            <noscript><p>Enable JavaScript to browse project cards, or visit <a href="https://github.com/FZNALI15">my GitHub profile</a>.</p></noscript>
+        </section>
+        <section id="contact" class="content-section alternate-section">
+            <h2><i class="fa-solid fa-satellite-dish"></i> CONTACT</h2>
+            <p class="section-description">Want to connect? You can find me here:</p>
+            <div class="contact-container">
+                <a href="mailto:fwagpura@asu.edu" class="contact-card reveal"><i class="fa-solid fa-envelope"></i><div><span>Email</span><p>fwagpura@asu.edu</p></div></a>
+                <a href="https://www.linkedin.com/in/faizan-ali-wagpurawala-986574233/" target="_blank" rel="noopener noreferrer" class="contact-card reveal"><i class="fa-brands fa-linkedin"></i><div><span>LinkedIn</span><p>Faizan Ali Wagpurawala</p></div></a>
+                <a href="https://github.com/FZNALI15" target="_blank" rel="noopener noreferrer" class="contact-card reveal"><i class="fa-brands fa-github"></i><div><span>GitHub</span><p>FZNALI15</p></div></a>
             </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-robot"></i>
-                <span>AI Prompting</span>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="content-section">
-
-        <h2>
-            <i class="fa-solid fa-folder-open"></i>
-            PROJECTS
-        </h2>
-
-        <p class="section-description">
-            Projects I'm building throughout my web development journey.
-        </p>
-
-        <div class="projects-container">
-
-            <!-- Portfolio Website -->
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
-
-                <h3>Portfolio Website</h3>
-
-                <p class="project-tech">
-                    HTML + CSS
-                </p>
-
-                <p>
-                    My first project for the Global Career Accelerator:
-                    a personal portfolio website built using HTML and CSS.
-                </p>
-
-                <p class="recursion-joke">
-                    Yes, this project links to itself.<br>
-                    That's basically recursion... right? 🤔
-                </p>
-
-                <!-- Replace this link with your GitHub Pages URL later -->
-                <a
-                    href="https://fznali15.github.io/GCA-Project1-PortfolioWebsite/"
-                    class="project-button"
-                >
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    VIEW PROJECT
-                </a>
-
-            </div>
-
-
-            <!-- Future Project -->
-            <div class="project-card future-project">
-
-                <div class="project-icon">
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-
-                <h3>Project Loading...</h3>
-
-                <p>
-                    More projects will appear here as I continue through
-                    the course.
-                </p>
-
-                <span class="coming-soon">
-                    COMING SOON
-                </span>
-
-            </div>
-
-
-            <!-- Future Project -->
-            <div class="project-card future-project">
-
-                <div class="project-icon">
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-
-                <h3>Project Loading...</h3>
-
-                <p>
-                    Something cool will eventually live here.
-                    Hopefully.
-                </p>
-
-                <span class="coming-soon">
-                    COMING SOON
-                </span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="content-section alternate-section">
-
-        <h2>
-            <i class="fa-solid fa-satellite-dish"></i>
-            CONTACT
-        </h2>
-
-        <p class="section-description">
-            Want to connect? You can find me here:
-        </p>
-
-        <div class="contact-container">
-
-            <a href="mailto:fwagpura@asu.edu" class="contact-card">
-                <i class="fa-solid fa-envelope"></i>
-
-                <div>
-                    <span>Email</span>
-                    <p>fwagpura@asu.edu</p>
-                </div>
-            </a>
-
-
-            <a
-                href="https://www.linkedin.com/in/faizan-ali-wagpurawala-986574233/"
-                target="_blank"
-                class="contact-card"
-            >
-                <i class="fa-brands fa-linkedin"></i>
-
-                <div>
-                    <span>LinkedIn</span>
-                    <p>Faizan Ali Wagpurawala</p>
-                </div>
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
+        </section>
+    </main>
     <footer>
-
-        <p>
-            Made with
-            <i class="fa-solid fa-heart"></i>
-            + HTML + CSS + ChatGPT
-        </p>
-
-        <p class="footer-small">
-            © 2026 Faizan Ali Wagpurawala
-        </p>
-
+        <p>Made with <i class="fa-solid fa-heart"></i> + HTML + CSS + JavaScript + ChatGPT</p>
+        <p class="footer-small">© 2026 Faizan Ali Wagpurawala</p>
     </footer>
-
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" hidden><i class="fa-solid fa-arrow-up"></i></button>
+    <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-header"><h2 id="dialog-title"></h2><button type="button" class="dialog-close" aria-label="Close project details" autofocus><i class="fa-solid fa-xmark"></i></button></div>
+        <div id="dialog-content"></div>
+        <button type="button" class="project-button close-bottom">CLOSE DETAILS</button>
+    </dialog>
 </body>
-
 </html>
